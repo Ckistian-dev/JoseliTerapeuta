@@ -58,7 +58,7 @@
         nav ul {
             display: flex;
             flex-direction: line; /* Empilhar os links na horizontal */
-            padding-left: 45rem;
+            padding-left: 35rem;
         }
 
         nav ul li {
@@ -241,6 +241,71 @@
             font-size: 1.1rem;
             color: #333;
         }
+        /* Seção de comentários */
+        #comentarios {
+            background-color: #F4F8F7; /* Fundo suave */
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        #comentarios h2 {
+            font-size: 2.5rem;
+            color: #2F4F2F;
+            margin-bottom: 2rem;
+        }
+
+        #comentarios p {
+            font-size: 1.2rem;
+            color: #4F4F4F;
+            margin-bottom: 3rem;
+        }
+
+        .comentarios-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .comentario-card {
+            background-color: #A3C59D;
+            padding: 2rem;
+            border-radius: 10px;
+            width: 30%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .comentario-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .comentario-texto {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .cliente-nome {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #2F4F2F;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .comentarios-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .comentario-card {
+                width: 80%;
+                margin-bottom: 2rem;
+            }
+        }
         /* Seção de Agendamento */
         .agende-sua-consulta {
             background-color: #e0f2e9; /* Fundo verde claro */
@@ -421,6 +486,7 @@
         <li><a href="#Início">Início</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#comentarios">Comentários</a></li>
         <li><a href="#agendar">Agendar</a></li>
     </ul>
 </nav>
@@ -461,6 +527,32 @@
             <img src="https://i0.wp.com/missel.com.br/wp-content/uploads/2021/02/O-apoio-emocional-e-o-papel-do-Lider.jpg?resize=2048%2C1366&ssl=1" alt="Suporte Emocional">
             <h3>Suporte Emocional</h3>
             <p>Espaço de escuta ativa para promover o autoconhecimento e a reflexão.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Seção de Comentários dos Clientes -->
+<section id="comentarios" class="section">
+    <h2>O que nossos clientes dizem</h2>
+    <p>Veja os depoimentos de nossos clientes satisfeitos com os serviços oferecidos.</p>
+
+    <div class="comentarios-container">
+        <!-- Card de comentário 1 -->
+        <div class="comentario-card">
+            <p class="comentario-texto">"A terapia online me ajudou a lidar com a ansiedade de uma maneira que eu nunca imaginei ser possível. A profissional é excelente e o atendimento é sempre acolhedor."</p>
+            <p class="cliente-nome">- João da Silva</p>
+        </div>
+        
+        <!-- Card de comentário 2 -->
+        <div class="comentario-card">
+            <p class="comentario-texto">"Com a terapia online, consegui melhorar a minha autoestima e me sinto mais preparado para os desafios do dia a dia. A experiência foi maravilhosa."</p>
+            <p class="cliente-nome">- Maria Oliveira</p>
+        </div>
+
+        <!-- Card de comentário 3 -->
+        <div class="comentario-card">
+            <p class="comentario-texto">"Nunca pensei que a terapia online fosse tão eficaz. Me senti muito confortável e o atendimento foi extremamente profissional. Super recomendo!"</p>
+            <p class="cliente-nome">- Pedro Costa</p>
         </div>
     </div>
 </section>
