@@ -241,13 +241,13 @@
             section#sobre {
                 flex-direction: column;  /* Empilha a imagem e o texto */
                 align-items: center;
-                padding: 8rem 2rem;  /* Alinha os itens no centro */
             }
 
             section#sobre img {
                 height: 600px; /* Ajusta o tamanho da imagem */
-                padding: 3rem 0;
                 margin-right: 0; /* Remove o padding excessivo para dispositivos pequenos */
+                padding: 0;
+                border-radius: 10px;
             }
 
             section#sobre .text {
@@ -267,8 +267,9 @@
         /* Responsividade para dispositivos muito pequenos */
         @media screen and (max-width: 480px) {
             section#sobre img {
-                height: 300px; /* Ajusta ainda mais a altura da imagem */
-                padding: 2rem 0;
+                height: 250px; /* Ajusta ainda mais a altura da imagem */
+                padding: 0;
+                border-radius: 10px;
             }
 
             section#sobre h2 {
@@ -356,7 +357,7 @@
             }
 
             header p {
-                font-size: 0.8rem;
+                font-size: 1rem;
             }
         }
 
