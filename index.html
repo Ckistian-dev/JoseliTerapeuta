@@ -95,7 +95,7 @@
             display: flex;
             flex-direction: column;
             position: absolute;
-            top: 80px;
+            top: 55px;
             right: 20px;
             background-color: #4A6E46;
             padding: 10px;
@@ -104,7 +104,7 @@
             width: 250px; /* Definindo a largura do menu */
             height: auto; /* Ajuste automático da altura */
             max-height: 400px; /* Limite máximo de altura, ajustável conforme necessário */
-            border: 2px solid white; /* Borda branca ao redor do menu */
+
         }
         /* Estilos para os itens de navegação dentro do menu */
         nav ul.active li {
@@ -201,21 +201,26 @@
             background-color: #A3C59D;
             display: flex;
             align-items: center;  /* Alinha os itens no centro verticalmente */
-            justify-content: space-between;  /* Cria espaço entre a imagem e o texto */
+            justify-content: center; /* Alinha os itens no centro verticalmente */
             padding: 4rem 2rem;
         }
 
         /* Estilo da imagem à esquerda */
         section#sobre img {
             height: 600px;
-            padding: 5rem 10rem;
-            border-radius: 10px; /* Para dar um efeito de borda arredondada, se desejar */
+            padding: 0; /* Remover o padding pode permitir que a borda arredondada apareça corretamente */
+            border-radius: 10px; /* Mantém o efeito de borda arredondada */
+            max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+            align-items: center;
+            margin-right: 3rem;
         }
 
         /* Estilo do texto à direita */
         section#sobre .text {
-            max-width: 50%; /* Limita a largura do texto */
+            max-width: 40%; /* Limita a largura do texto */
             text-align: center;  /* Centraliza o texto */
+            align-items: center;
+            margin-left: 3rem;
         }
 
         section#sobre h2 {
@@ -240,8 +245,9 @@
             }
 
             section#sobre img {
-                height: 400px; /* Ajusta o tamanho da imagem */
-                padding: 3rem 0; /* Remove o padding excessivo para dispositivos pequenos */
+                height: 600px; /* Ajusta o tamanho da imagem */
+                padding: 3rem 0;
+                margin-right: 0; /* Remove o padding excessivo para dispositivos pequenos */
             }
 
             section#sobre .text {
