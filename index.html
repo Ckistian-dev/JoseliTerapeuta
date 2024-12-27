@@ -40,8 +40,7 @@
             color: white;
             font-size: 1.5rem;
             font-weight: bold;  
-            align-items: center;
-            
+            align-items: center;            
         }
 
         nav .logo-text img {
@@ -171,7 +170,7 @@
         }
 
         header p {
-            font-size: 1.5rem;
+            font-size: 2rem;
             margin-top: 1rem;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
@@ -183,9 +182,17 @@
             background-size: cover;
             background-position: center;
             text-align: center;
-            padding: 20rem 2rem; /* Aumentando o padding para tornar o cabeçalho mais alto */
+            padding: 27rem 2rem; /* Aumentando o padding para tornar o cabeçalho mais alto */
             color: white;
-            position: relative;
+
+        }
+        header h1 {
+            font-size: 10rem;
+        }
+
+        header p {
+            font-size: 2rem;
+            margin-top: 1rem;
         }
         }
 
@@ -228,7 +235,8 @@
             /* Altera o layout para empilhar os itens em telas pequenas */
             section#sobre {
                 flex-direction: column;  /* Empilha a imagem e o texto */
-                align-items: center;  /* Alinha os itens no centro */
+                align-items: center;
+                padding: 8rem 2rem;  /* Alinha os itens no centro */
             }
 
             section#sobre img {
@@ -333,16 +341,16 @@
             }
 
             .service-card {
-                width: 80%;
-                margin-bottom: 2rem;
+                width: 100%;
+                margin-bottom: 1rem;
             }
 
             header h1 {
-                font-size: 3rem;
+                font-size: 1.5rem;
             }
 
             header p {
-                font-size: 1.2rem;
+                font-size: 0.8rem;
             }
         }
 
@@ -365,11 +373,26 @@
             margin-bottom: 3rem;
         }
 
+        /* Responsividade */
+        @media (max-width: 768px) {
+        .comentarios h2 {
+            font-size: 1.5rem;
+            color: #2F4F2F;
+            margin-bottom: 1rem;
+        }
+
+        .comentarios p {
+            font-size: 0.8rem;
+            color: #4F4F4F;
+            margin-bottom: 1rem;
+        }
+        }
+
         .comentarios-container {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            gap: 2rem;
+            gap: 1rem;
         }
 
         .comentario-card {
@@ -407,8 +430,8 @@
             }
 
             .comentario-card {
-                width: 80%;
-                margin-bottom: 2rem;
+                width: 100%;
+                margin-bottom: 1rem;
             }
         }
         /* Seção de Agendamento */
@@ -560,7 +583,17 @@
             margin-top: 20px;
         }
 
+        /* Estilo para o link do Instagram */
+        .contacts-link {
+            color: inherit; /* Mantém a cor do texto original */
+            text-decoration: none; /* Remove o sublinhado padrão */
+            transition: color 0.3s ease; /* Suaviza a transição de cor */
+        }
 
+        /* Efeito ao passar o mouse */
+        .contacts-link:hover {
+            color: rgba(0, 0, 0, 0.7); /* Escurece o texto ao passar o mouse */
+        }
 
         /* Responsividade */
         @media (max-width: 768px) {
@@ -679,7 +712,7 @@
         <div class="agendamento-texto">
             <h2>Agende sua Consulta</h2>
             <p>Clique no botão abaixo para agendar sua consulta e começar sua jornada para o bem-estar.</p>
-            <a href="https://wa.me/554599678804?text=Olá!%20Gostaria%20de%20agendar%20um%20horário." class="btn-agendar">Agendar Agora</a>
+            <a href="https://wa.me/554599678804?text=Olá!%20Gostaria%20de%20agendar%20um%20horário." target="_blank"  class="btn-agendar">Agendar Agora</a>
         </div>
         <div class="agendamento-imagem">
             <img src="https://www.clinicascoppetta.com.br/wp-content/uploads/2021/07/close-up-on-mature-woman-hand-holding-smartphone-to-using-social-media-or-video-call-application-or-checking-news-on-website-for-retirement-lifestyle-concept-2-1080x480.jpg" alt="Imagem de Terapia">
@@ -700,7 +733,7 @@
         <!-- Coluna 1 -->
         <div class="footer-column">
             <h3>Localização</h3>
-            <p>RUA. Luiz Centenaro - Universitário, Marechal Cândido Rondon - PR.</p>
+            <p><a href="https://maps.app.goo.gl/mf59fowk2kHFuYi79" target="_blank" class="contacts-link">RUA. Luiz Centenaro - Universitário, Marechal Cândido Rondon - PR.</a></p>
         </div>
         
         <!-- Coluna 2 -->
@@ -717,14 +750,15 @@
         <div class="footer-column">
             <h3>Contato</h3>
             <p>Telefone:</p>
-            <p>(45) 99861-833</p>
+            <p><a href="https://wa.me/554599678804?text=Olá!%20Gostaria%20de%20agendar%20um%20horário." target="_blank" class="contacts-link">(45) 99861-833</a></p>
             <p>Instagram:</p>
-            <p>@JoseliTerapeuta</p>
+            <p><a href="https://www.instagram.com/JoseliTerapeuta" target="_blank" class="contacts-link">@JoseliTerapeuta</a></p>
         </div>
     </div>
     
     <!-- Direitos Reservados -->
     <p class="rights">© 2024 SitesByCkristian - Todos os direitos reservados.</p>
+
 </footer>
 
 <script>
